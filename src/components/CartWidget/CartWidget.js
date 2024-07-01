@@ -1,12 +1,14 @@
-import carrito2 from "./CartWidget/carrito2.png"
+import React from 'react';
+import { FaShoppingCart } from 'react-icons/fa';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CartWidget = () => {
-    return (
-        <div>
-            <img src={carrito2} alt="carrito"/>
-            0
-        </div>
-    )
+  return (
+    <div className="cart-widget d-flex align-items-center">
+      <FaShoppingCart size={30} className="mr-2" />
+      <span className="badge badge-pill badge-primary">3</span>
+    </div>
+  );
 }
 
-export default CartWidget
+export default CartWidget;
